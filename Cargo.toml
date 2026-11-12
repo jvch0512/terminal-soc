@@ -1,0 +1,12 @@
+[package]
+name = "terminal-soc"
+version = "0.1.0"
+edition = "2021"
+description = "A SOC analyst console for the terminal: live alert queue, risk scoring with kill chain correlation, triage actions and playbooks. Rust and ratatui."
+license = "MIT"
+
+[dependencies]
+crossterm = "0.29"
+ratatui = "0.30"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
