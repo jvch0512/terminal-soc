@@ -1,0 +1,5 @@
+{"rule":"Encoded PowerShell","tactic":"Execution","technique":"T1059.001","severity":"high","host":"fin-ws-12","user":"m.garcia","src_ip":"198.51.100.23","detail":"powershell -enc spawned by winword.exe","criticality":3,"intel_hit":true,"ts":120,"playbook":["Isolate the host","Decode the payload"]}
+{"rule":"New local administrator","tactic":"Persistence","technique":"T1136.001","severity":"high","host":"fin-ws-12","user":"m.garcia","detail":"Account svc_upd7 added to Administrators","criticality":3,"ts":260}
+{"rule":"LSASS memory access","tactic":"Credential Access","technique":"T1003.001","severity":"critical","host":"fin-ws-12","user":"m.garcia","detail":"Process opened lsass.exe with PROCESS_VM_READ","criticality":3,"ts":410,"playbook":["Isolate the host","Reset credentials"]}
+{"rule":"Internal port scan","tactic":"Discovery","technique":"T1046","severity":"low","host":"dev-ws-33","detail":"30 hosts probed on 445","criticality":1,"ts":500}
+this line is not json and is skipped
